@@ -1,0 +1,59 @@
+<header id="myHeader" class="">
+    <div>
+        <center><img src="world.gif" width="200" height="200" style="animation: rotate 5s linear infinite;"></center>
+    </div>
+	<svg id="logo" img src ="world.gif" width="200" height="200"></svg>
+  <path fill="#fff" fill-rule="evenodd" d="M502.8 0h211.8l-23 39.7-138.5 240L483 401H342.7L413 279.6 251.4 0h140.3L483 158.1 538.6 62 502.8 0Zm-201 279.6L140.1 0H0l231.7 401 70-121.4Z"/>
+  <link href="document.js" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</svg>
+    
+	<nav>
+		<a href="#vision">Vision</a>
+		<a href="#modify">Modify</a>
+		<a href="#by">by</a>
+		<a href="#future">Future</a>
+		<button id="openmenu">
+			<span></span>
+			<span></span>
+		</button>
+	</nav>
+</header>
+<div id="page" class="">
+
+	<section id="vision"><img src="gif/eye.gif" width="1980" height="1180" alt="color">
+	</section>
+
+	<section id="modify"><img src="gif/form.gif" width="1980" height="1180" alt="color">
+	</section>
+
+	<section id="by"><img src="gif/peoples.jpg" width="1980" height="1180" alt="color">
+		<h1>By</h1>
+	</section>
+
+	<section id="future"><img src="gif/glove.jpg" width="1980" height="1180" alt="color">
+		<img src="gif/glove2.jpg" width="1980" height="1180" alt="color">
+		<img src="gif/glove3.jpg" width="1980" height="1180" alt="color">
+		<img src="gif/glove4.jpg" width="1980" height="1180" alt="color">
+		<img src="gif/glove5.jpg" width="1980" height="1180" alt="color">
+	</section>
+
+	<script>
+		Wa
+		const futureSection = document.getElementById('future');
+		let currentImageIndex = 0;
+		const images = futureSection.querySelectorAll('img');
+	
+		function changeImage() {
+			images[currentImageIndex].style.display = 'none';
+			currentImageIndex = (currentImageIndex + 1) % images.length;
+			images[currentImageIndex].style.display = 'block';
+		}
+	
+		setInterval(changeImage, 2000);
+	</script>
+
+	<section><h2>At soon...</h2></section>
+
+</div>
+<a id="fixedlink" target="_blank" rel="nofollow noopener" href="https://wyld.studio/">the glove that sees the unreal</a>
